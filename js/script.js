@@ -2,9 +2,14 @@
 //Strict Mode
 'use-strict';
 
+
+//Here we hidde, the loader animation
+$('#loader').css('display', 'none');
+
 //Url, receives the link to access the API Info
 //apiKey, receives the key to access the API
 //weekdays, is an object, with the days of the week
+
 const url = 'https://api.weatherbit.io/v2.0/forecast/daily';
 const apiKey = '35c1f516098745bb900f93bd32f7016a';
 const weekdays = {
@@ -17,8 +22,7 @@ const weekdays = {
     6: 'Sab',
 }
 
-//Here we hidde, the loader animation
-$('#loader').css('display', 'none');
+
 
 //Click Event, to search for any city in the world
 $('#search').click(function(event) {
